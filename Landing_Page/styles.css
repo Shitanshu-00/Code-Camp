@@ -1,0 +1,137 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #eee;
+    font-family: Lato, sans-serif;
+}
+#header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: #eee;
+}
+#title{
+    letter-spacing: 0.5px;
+}
+#header-img{
+    width: 300px;
+}
+#nav-bar{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+main{
+    width: 70%;
+    text-align: center;
+    margin : 5rem auto;
+}
+a{
+    text-decoration: none;
+    color: #010;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 0.8rem;
+}
+#email{
+    height: 1.2rem;
+    width: 30%;
+    padding: 0.2rem;
+}
+#submit{
+    padding: 0.4rem;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    background-color: #f1b20c;
+    border: none;
+}
+#features{
+    display: grid;
+    margin-top: 2.5rem;
+    width: 100%;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+}
+.feature{
+    text-align: left;
+    margin: 1rem 2rem ;
+}
+.feature h2{
+    margin-bottom: -1rem;
+}
+i{
+    width: 20%;
+    color: #f1b20c;
+}
+#pricing{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(200px, auto);
+    margin: 2rem auto;
+}
+.box{
+    border: 1px solid #000;
+    padding-bottom: 0.5rem;
+}
+.box button{
+    background: #f1b20c;
+    border: none;
+    padding: 0.4rem;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.1rem;
+    border-radius: 3px;
+}
+h4{
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #ddd;
+}
+footer{
+ background-color: #ddd;
+ width: 80%;
+ margin: 0 auto;
+ display: flex;
+}
+footer ul{
+    list-style-type: none;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 720px){
+    #nav-bar{
+        width: 40%;
+        display: grid;
+        grid-gap: 0.2rem
+    }
+    main{
+        width: 70%;
+        text-align: center;
+        margin : 6.6rem auto;
+    }
+    .box button{
+        background: #f1b20c;
+        border: none;
+        padding: 0.4rem;
+        cursor: pointer;
+        width: 60%;
+        font-size: 1rem;
+        border-radius: 3px;
+    }
+}
