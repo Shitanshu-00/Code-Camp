@@ -1,15 +1,17 @@
-html{
+html {
     box-sizing: border-box;
     font-size: 16px;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
     background: #eee;
     font-family: Lato, sans-serif;
 }
-#header{
+
+#header {
     position: fixed;
     top: 0;
     display: flex;
@@ -19,75 +21,96 @@ body{
     padding: 1.5rem;
     background-color: #eee;
 }
-#title{
+
+#title {
     letter-spacing: 0.5px;
 }
-#header-img{
+
+#header-img {
     width: 300px;
 }
-#nav-bar{
+
+#nav-bar {
     width: 40%;
     display: flex;
     justify-content: space-around;
 }
-main{
+
+main {
     width: 70%;
     text-align: center;
-    margin : 5rem auto;
+    margin: 5rem auto;
 }
-a{
+
+a {
     text-decoration: none;
     color: #010;
 }
-form{
+
+form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     row-gap: 0.8rem;
 }
-#email{
+
+#email {
     height: 1.2rem;
     width: 30%;
     padding: 0.2rem;
 }
-#submit{
+
+#submit {
     padding: 0.4rem;
     font-weight: 800;
     letter-spacing: 0.6px;
     background-color: #f1b20c;
     border: none;
 }
-#features{
+
+#features {
     display: grid;
     margin-top: 2.5rem;
     width: 100%;
     grid-template-columns: 100px 1fr;
     align-items: center;
 }
-.feature{
-    text-align: left;
-    margin: 1rem 2rem ;
+
+#video {
+    width: 100%;
+    height: auto;
+    min-height: 260px;
 }
-.feature h2{
+
+.feature {
+    text-align: left;
+    margin: 1rem 2rem;
+}
+
+.feature h2 {
     margin-bottom: -1rem;
 }
-i{
+
+i {
     width: 20%;
     color: #f1b20c;
 }
-#pricing{
+
+#pricing {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     grid-auto-rows: minmax(200px, auto);
     margin: 2rem auto;
 }
-.box{
+
+.box {
     border: 1px solid #000;
     padding-bottom: 0.5rem;
 }
-.box button{
+
+.box button {
     background: #f1b20c;
     border: none;
     padding: 0.4rem;
@@ -96,36 +119,41 @@ i{
     font-size: 1.1rem;
     border-radius: 3px;
 }
-h4{
+
+h4 {
     margin: 0;
     padding: 0.5rem;
     background-color: #ddd;
 }
-footer{
- background-color: #ddd;
- width: 80%;
- margin: 0 auto;
- display: flex;
+
+footer {
+    background-color: #ddd;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
 }
-footer ul{
+
+footer ul {
     list-style-type: none;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
 }
 
-@media (max-width: 720px){
-    #nav-bar{
+@media (max-width: 720px) {
+    #nav-bar {
         width: 40%;
         display: grid;
         grid-gap: 0.2rem
     }
-    main{
+
+    main {
         width: 70%;
         text-align: center;
-        margin : 6.6rem auto;
+        margin: 6.6rem auto;
     }
-    .box button{
+
+    .box button {
         background: #f1b20c;
         border: none;
         padding: 0.4rem;
